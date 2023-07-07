@@ -13,8 +13,6 @@ RUN chmod +x /tomcat.sh && \
 	/tomcat.sh && \
 	rm /tomcat.sh
 
-COPY ./server.xml /opt/tomcat9/conf/
-
 COPY ./apache2.sh /
 RUN chmod +x /apache2.sh && \
 	/apache2.sh && \
