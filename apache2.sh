@@ -12,8 +12,8 @@ DocumentRoot /srv/www
 EOF
 
 # We must disable the autoindex mod
-# We are expressly told not to do that by a2dismod, but it is not automatically enabled
-# after an upgrade from Ubuntu 18 to 20.
+# We are expressly told not to do that by a2dismod, but it's possible, and it's recommended
+# by CIS, see https://www.tenable.com/audits/items/CIS_Apache_HTTP_Server_2.4_Benchmark_v2.0.0_Level_1.audit:7089644969c33c9ce954a0e77ef3046e
 a2dismod -f autoindex
 
 # We must require all granted the base dir
